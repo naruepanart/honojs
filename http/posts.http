@@ -1,23 +1,24 @@
 @host=localhost:8787
 
 ### 
-GET http://{{host}}/users
+GET http://{{host}}/posts
 content-type: application/json
 
 ### 
-GET http://{{host}}/users/123
+GET http://{{host}}/posts/123
 content-type: application/json
 
 ### 
-POST http://{{host}}/users
+POST http://{{host}}/posts
 content-type: application/json
 
 {
-    "name": "country 1"    
+    "title": "title",    
+    "body": "body 1"    
 }
 
 ### 
-PATCH http://{{host}}/users/123
+PATCH http://{{host}}/posts/123
 content-type: application/json
 
 {
@@ -25,5 +26,5 @@ content-type: application/json
 }
 
 ### 
-DELETE http://{{host}}/users/123
+DELETE http://{{host}}/posts/123
 content-type: application/json
