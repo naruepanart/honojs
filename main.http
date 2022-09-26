@@ -1,0 +1,29 @@
+@host=localhost:8787
+
+### 
+GET http://{{host}}/users
+content-type: application/json
+
+### 
+GET http://{{host}}/users/123
+content-type: application/json
+
+### 
+POST http://{{host}}/users
+content-type: application/json
+
+{
+    "name": "country 1"    
+}
+
+### 
+PATCH http://{{host}}/users/123
+content-type: application/json
+
+{
+    "name": "country"    
+}
+
+### 
+DELETE http://{{host}}/users/123
+content-type: application/json
