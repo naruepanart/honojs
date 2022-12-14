@@ -10,7 +10,7 @@ posts.use("*", async (c, next) => {
 posts.use("*", cors());
 
 posts.get("/", (c) => {
-  return c.json({ message: "Hello" });
+  return c.json({ message: "Hello Posts" });
 });
 
 posts.get("/", (c) => {
